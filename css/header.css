@@ -1,0 +1,225 @@
+header{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 230px;
+    background-color: #5d310e;
+    border-bottom: 1px solid black;
+    z-index: 1000;
+}
+.wimg {
+    width: 140px; /* Set a width for the image */
+    margin: 0px auto; /* Centers the image horizontally */
+    margin-top: 10px;
+}
+
+.wdiv {
+    height: 60px;
+    text-align: center; /* Ensures text/image is centered horizontally */
+}
+.bdiv{
+   
+    display: flex;
+    height: 35px;
+}
+.fbut ,.lbut{
+    width: 20px;
+}
+.fbutton ,.lbutton{
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    transition: opacity 0.3s , background-color 0.3s;
+    cursor: pointer;
+}
+
+.fbutton:hover ,.lbutton:hover{
+    box-shadow: 0px 0px 5px rgb(98, 98, 98);
+}
+.fbutton:active ,.lbutton:active {
+    background-color: rgb(183, 182, 182);
+}
+.items {
+    position: relative;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: grab;
+    height: 150px; /* Fixed height */
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap; /* Keep items in one line */
+}
+
+/* Hide the scrollbar in all browsers (Webkit-based & Firefox) */
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.items {
+    scrollbar-width: none; /* Firefox */
+}
+
+
+.item {
+    display: inline-block;
+    background: white;
+    height: 100px;
+    width: 100px;
+    margin: 2em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.item1 {
+    background-image: url(item1icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.item2 {
+    background-image: url(item3icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.item3 {
+    background-image: url(itemcoldd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.item4 {
+    background-image: url(item4icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.item5 {
+    background-image: url(item5icon.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+.item6 {
+    background-image: url(item6icon.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+.item7 {
+    background-image: url(item7icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 68%;
+}
+
+.item8 {
+    background-image: url(item8icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.item9 {
+    background-image: url(itemhook.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+
+.item10 {
+    background-image: url(item11.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+}
+
+.item11 {
+    background-image: url(item12.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 69%;
+}
+
+.item12 {
+    background-image: url(item9icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+
+
+
+
+.a{
+    margin-right: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.rldiv{
+    background-color: black;
+    position: absolute;
+    bottom: -90px;
+    top: 30px;
+    width: 75px;
+    right: 30%;
+    z-index: 1;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: none;
+}
+.English ,.arabic ,.kurdish{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.English{
+    margin-top: 8px;
+    font-size: 13px;
+    padding: 7px 0 7px 0;
+}
+.arabic{
+    font-size: 17px;
+    padding: 3px 0 3px 0;
+}
+.kurdish{
+    font-size: 17px;
+    padding: 3px 0 3px 0;
+}
+.English:hover ,.arabic:hover ,.kurdish:hover{
+    background-color: rgb(58, 58, 58);
+}
+.English:active ,.arabic:active ,.kurdish:active{
+    background-color: rgb(87, 87, 87);
+}
+
+.b{
+    flex: 1;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
