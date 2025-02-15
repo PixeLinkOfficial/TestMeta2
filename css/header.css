@@ -9,9 +9,9 @@ header{
     z-index: 1000;
 }
 .wimg {
-    width: 140px; /* Set a width for the image */
+    width: 100px; /* Set a width for the image */
     margin: 0px auto; /* Centers the image horizontally */
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .wdiv {
